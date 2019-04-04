@@ -1,0 +1,17 @@
+{
+    "name": "pengdancui/design-patterns",
+    "authors": [
+        {
+            "name": "邱佳飞",
+            "email": "253896514@qq.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DesignPatterns\\": "./"
+        }
+    }
+}
