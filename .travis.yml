@@ -1,13 +1,19 @@
-language: php  # 我们代码所需要运行的环境平台
+language: php
 
-php:  # 需要测试的版本
+sudo: false
+
+php:
 - 7.3
 
-dist: trusty   # 系统版本
-sudo: false  # 使用使用 sudo 模式
+matrix:
+  fast_finish: true
 
-# 执行前需要运行的命令
-install: travis_retry composer install --no-interaction --prefer-source
+cache:
+  directories:
+  - $HOME/.composer/cache
 
-# 主要构建命令
-script: vendor/bin/phpunit --verbose
+install:
+- composer install --prefer-dist --no-interaction
+
+script:
+- vendor/bin/phpunit
