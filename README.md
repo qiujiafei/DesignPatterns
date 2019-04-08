@@ -7,6 +7,16 @@
 >+ 配合composer了解phpunit用法
 >+ 学习写测试用例
 
+## 目录
+[创建型(Creational)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Creational)
+ + :blue_book: [抽象工厂模式 (Abstract Factory)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Creational/AbstractFactory)
+ + :blue_book: [建造者模式 (Builder)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Creational/Builder)
+ + :blue_book: [工厂方法模式 (Factory Method)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Creational/FactoryMethod)
+ + :u7981: [多例模式 (Multiton)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Creational/Multiton)
+ + :blue_book: [对象池模式 (Pool)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Creational/Pool)
+ + :blue_book: [原型模式 (Prototype)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Creational/Prototype)
+
+
 ## 环境和依赖
 ```$xslt
 php 7.3
@@ -30,3 +40,4 @@ OK (2 tests, 2 assertions)
 
 ## 参考
 + [PHP 设计模式全集 2018](https://learnku.com/docs/php-design-patterns/2018)
++ [domnikl/DesignPatternsPHP](https://github.com/domnikl/DesignPatternsPHP)
