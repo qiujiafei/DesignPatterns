@@ -1,4 +1,6 @@
 # PHP设计模式练习
+[![Build Status](https://travis-ci.com/qiujiafei123/DesignPatterns.svg?branch=master)](https://travis-ci.com/qiujiafei123/DesignPatterns)  
+
 以前光对设计模式有耳闻，一直没有实践的机会，期间也看过一些博客，但是一直不知道怎么使用  
 趁着最近项目不忙，可以稍微写一下demo来强化理解
 
