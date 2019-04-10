@@ -8,6 +8,8 @@
  */
 namespace DesignPatterns\Structural\Registry;
 
+use phpDocumentor\Reflection\Types\Self_;
+
 /**
  * 创建注册表抽象类
  * Class Registry
@@ -15,9 +17,10 @@ namespace DesignPatterns\Structural\Registry;
  */
 abstract class Registry
 {
-    const LOGGER = 'logger';
+    //const LOGGER = 'logger';
 
     /**
+     * v2.0 没有采用写死的常量。新增方法设置 allowedkeys
      * 这里将在你的应用中引入全局状态， 但是不可以被模拟测试
      * 因此被视作一种反抗模式！ 使用依赖注入进行替换
      * @var array 定义储存值数组
@@ -29,9 +32,22 @@ abstract class Registry
      * 可在此定义用户名唯一性
      * @var array
      */
-    private static $allowedKeys = [
-        self::LOGGER
-    ];
+    private static $allowedKeys = [];
+
+    public static function getAllowedKeys(): array
+    {
+        return self::$allowedKeys;
+    }
+
+
+    public static function setAllowedKey(... $keys)
+    {
+        foreach ($keys as $key) {
+            array_push(self::$allowedKeys, $key);
+        }
+
+    }
+
 
     /**
      * 设置键值， 并保存进 $storeValues

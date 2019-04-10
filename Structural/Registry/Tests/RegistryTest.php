@@ -13,23 +13,15 @@ use PHPUnit\Framework\TestCase;
 
 class RegistryTest extends TestCase
 {
-    /**
-     * 为什么先验证get
-     * 因为后面会set这个常量进内存
-     * 在此运行隔离进程，防止前面的进程被设置，导致测试无法运行
-     * 这就是为什么你应该实现依赖注入
-     * 因为注入类会很容易被测试单元替代
-     */
-    public function testThrowsExceptionWhenTryingToGetNotSetKey()
+    public function testSetAllowKey()
     {
-        $this->expectException(\InvalidArgumentException::class);
-        Registry::get(Registry::LOGGER);
+        Registry::setAllowedKey('name', 'email');
+        $this->assertEquals(['name', 'email'], Registry::getAllowedKeys());
     }
-
 
     public function testSetAndGetLogger()
     {
-        $key = Registry::LOGGER;
+        $key = 'name';
         $logger = new \stdClass();
 
         Registry::set($key, $logger);
@@ -45,4 +37,17 @@ class RegistryTest extends TestCase
         Registry::set('foobar', new \stdClass());
     }
 
+    /**
+     * v2.0 采用注入方式
+     * 为什么先验证get
+     * 因为后面会set这个常量进内存
+     * 在此运行隔离进程，防止前面的进程被设置，导致测试无法运行
+     * 这就是为什么你应该实现依赖注入
+     * 因为注入类会很容易被测试单元替代
+     */
+    public function testThrowsExceptionWhenTryingToGetNotSetKey()
+    {
+        $this->expectException(\InvalidArgumentException::class);
+        Registry::get('emali');
+    }
 }
