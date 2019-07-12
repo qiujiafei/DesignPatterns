@@ -50,10 +50,10 @@
 
  
  [更多 (More)](https://github.com/qiujiafei123/DesignPatterns/tree/master/More)
- + :close_book: [委托模式 (Delegation)](https://github.com/qiujiafei123/DesignPatterns/tree/master/More/Delegation)
- + :close_book: [服务定位器模式 (Service Locator)](https://github.com/qiujiafei123/DesignPatterns/tree/master/More/ServiceLocator)
- + :close_book: [资源库模式 (Repository)](https://github.com/qiujiafei123/DesignPatterns/tree/master/More/Repository)
- + :close_book: [实体属性值模式 (EAV)](https://github.com/qiujiafei123/DesignPatterns/tree/master/More/EAV)
+ + :closed_book: [委托模式 (Delegation)](https://github.com/qiujiafei123/DesignPatterns/tree/master/More/Delegation)
+ + :closed_book: [服务定位器模式 (Service Locator)](https://github.com/qiujiafei123/DesignPatterns/tree/master/More/ServiceLocator)
+ + :closed_book: [资源库模式 (Repository)](https://github.com/qiujiafei123/DesignPatterns/tree/master/More/Repository)
+ + :closed_book: [实体属性值模式 (EAV)](https://github.com/qiujiafei123/DesignPatterns/tree/master/More/EAV)
  
 
 
