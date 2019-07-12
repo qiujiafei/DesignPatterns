@@ -14,5 +14,8 @@
         "psr-4": {
             "DesignPatterns\\": "./"
         }
+    },
+    "require-dev": {
+        "codedungeon/phpunit-result-printer": "^0.26.2"
     }
 }
