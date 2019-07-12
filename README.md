@@ -34,15 +34,26 @@
  + :orange_book: [代理模式 (Proxy)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Structural/Proxy)
  + :orange_book: [注册模式 (Registry)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Structural/Registry)
  
- [行为型 (Behavioral)]()
- +
- +
- +
+ [行为型 (Behavioral)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Behavioral)
+ + :green_book: [责任链模式 (Chain Of Responsibilities)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Behavioral/ChainOfResponsibilities)
+ + :green_book: [命令行模式 (Command)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Behavioral/Command)
+ + :green_book: [迭代器模式 (Iterator)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Behavioral/Iterator)
+ + :green_book: [中介者模式 (Mediator)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Behavioral/Mediator)
+ + :green_book: [备忘录模式 (Memento)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Behavioral/Memento)
+ + :green_book: [空对象模式 (Null Object)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Behavioral/NullObject)
+ + :green_book: [观察者模式 (Observer)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Behavioral/Observer)
+ + :green_book: [规格模式 (Specification)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Behavioral/Specification)
+ + :green_book: [状态模式 (State)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Behavioral/State)
+ + :green_book: [策略模式 (Strategy)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Behavioral/Strategy)
+ + :green_book: [模板方法模式 (Template Method)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Behavioral/TemplateMethod)
+ + :green_book: [访问者模式 (Visitor)](https://github.com/qiujiafei123/DesignPatterns/tree/master/Behavioral/Visitor)
+
  
- [更多 (More)]()
- +
- +
- +
+ [更多 (More)](https://github.com/qiujiafei123/DesignPatterns/tree/master/More)
+ + :close_book: [委托模式 (Delegation)](https://github.com/qiujiafei123/DesignPatterns/tree/master/More/Delegation)
+ + :close_book: [服务定位器模式 (Service Locator)](https://github.com/qiujiafei123/DesignPatterns/tree/master/More/ServiceLocator)
+ + :close_book: [资源库模式 (Repository)](https://github.com/qiujiafei123/DesignPatterns/tree/master/More/Repository)
+ + :close_book: [实体属性值模式 (EAV)](https://github.com/qiujiafei123/DesignPatterns/tree/master/More/EAV)
  
 
 
@@ -50,21 +61,23 @@
 ```$xslt
 php 7.3
 composer 1.7.3
-phpunit 8.0
+phpunit 8.2.4
 ```
 ## demo使用
 在根目录运行 `composer install`  
 用例在每个设计模式对应的 `Test` 文件夹   
 ```shell
-$ ./vendor/bin/phpunit Creational/AbstractFactory/Tests/AbstractFactoryTest.php 
-PHPUnit 8.0.6 by Sebastian Bergmann and contributors.
+vendor/bin/phpunit Behavioral/Visitor/Tests/VisitorTest.php 
 
-..                                                                  2 / 2 (100%)
+PHPUnit Pretty Result Printer 0.26.2 by Codedungeon and contributors.
+==> Configuration: ~/code/php/DesignPatterns/vendor/codedungeon/phpunit-result-printer/src/phpunit-printer.yml
 
-Time: 130 ms, Memory: 4.00 MB
+PHPUnit 8.2.4 by Sebastian Bergmann and contributors.
 
-OK (2 tests, 2 assertions)
 
+ ==> VisitorTest                ✔  ✔  
+
+Time: 26 ms, Memory: 4.00 MB
 ```
 
 ## 参考
